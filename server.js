@@ -16,9 +16,11 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://diana-pulatova:1234567DP@dianapulatova.unc5h.mongodb.net/BOOKS?retryWrites=true&w=majority");
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://deg-18:Mongodbalex@1z@cluster0.42abh.mongodb.net/googlebooksearch?retryWrites=true&w=majority");
 
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+
