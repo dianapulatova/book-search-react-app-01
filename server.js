@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://localhost/Books',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://diana-pulatova:Diana1215@dianapulatova.unc5h.mongodb.net/Books?retryWrites=true&w=majority',
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://localhost/Books',
   useFindAndModify: false
 
 }
-
+);
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
